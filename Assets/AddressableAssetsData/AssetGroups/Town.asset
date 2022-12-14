@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Town
+  m_EditorClassIdentifier: 
+  m_GroupName: Town
+  m_Data:
+    m_SerializedData: []
+  m_GUID: b60b095f6f5e96941bd9f869790c6adb
+  m_SerializeEntries:
+  - m_GUID: e7806daa3421b9f43bea3af6c6999ee2
+    m_Address: Assets/Content/Town
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8001be97264c3104488b51da48e454c5
+    m_Address: Level 1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c75fbe20e86ff35439ccbd7f308a75d2
+    m_Address: KnifeProjectile
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 41fde021149aa64438eeaa209cc513c4
+    m_Address: ScoreUIView
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 30174e614ab31574dbb0af2dc6fbc7e1, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: ba604d099b134e14993555dcd003aecb, type: 2}
+    - {fileID: 11400000, guid: 10d41a9655ffe9d49bba61ea933427c1, type: 2}
