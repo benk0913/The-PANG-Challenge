@@ -2,19 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(ActorView))]
+[RequireComponent(typeof(ActorPlayer))]
 public class ActorController : MonoBehaviour
 {
     [SerializeField]
     ActorInputPreset ActorInputModel;
 
     [SerializeField]
-    ActorView ControlledActor;
+    ActorPlayer ControlledActor;
 
     void Reset()
     {
-        ControlledActor = GetComponent<ActorView>();
+        ControlledActor = GetComponent<ActorPlayer>();
     }
+
 
 
     void Update()

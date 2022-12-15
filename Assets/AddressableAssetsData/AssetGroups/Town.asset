@@ -33,6 +33,38 @@ MonoBehaviour:
     m_Address: ScoreUIView
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: 207e4a2f40047144e8d2e1c13053f8a5
+    m_Address: Slime3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 99be69bf5595ddf4e9ccf2fafeb71520
+    m_Address: Slime4
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9fd7cc172da78374e988771ae78a4a37
+    m_Address: Slime5
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e66fc08e8ef82f74783b69e2ba803b77
+    m_Address: Slime6
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 13a1a6f9292cda747be133b44d7a60e0
+    m_Address: Slime2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 767840b4093a7e74c84184e9293d9a1b
+    m_Address: Pop6
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: bce44a904d3e6f646bf435632ffb9db2
+    m_Address: Pop4
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 333c7e12c13b9d44592d7fd80a2947c9
+    m_Address: Pop2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 30174e614ab31574dbb0af2dc6fbc7e1, type: 2}
   m_SchemaSet:

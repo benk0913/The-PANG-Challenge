@@ -7,14 +7,13 @@ public class PangMinigame : MonoBehaviour
 {
     public static PangMinigame Instance;
 
+    public List<string> CampaignLevels = new List<string>();
+
     [SerializeField]
     MainMenuController MainMenu;
 
-    [SerializeField]
-    InGameController IngameUI;
-
-
     GameObject CurrentLevel;
+    public int CurrentPlayerCount { private set; get;}
 
     void Awake()
     {
@@ -22,23 +21,50 @@ public class PangMinigame : MonoBehaviour
         Application.targetFrameRate = 60;
     }
 
+    public void StartCampaign(int playerCount = 1)
+    {
+        CurrentPlayerCount = playerCount;
+
+        LoadLevel(CampaignLevels[0]);
+    }
+
     public void LoadLevel(string levelKey)
     {
+
         DisposeCurrentSession();
+        
+        MainMenu.gameObject.SetActive(false);
 
         ResourcesManager.Instance.LoadObject(levelKey,
         (GameObject levelObject) =>
         {
             CurrentLevel = Instantiate(levelObject);
-            MainMenu.gameObject.SetActive(false);
-            IngameUI.gameObject.SetActive(true);
-            IngameUI.ResetData();
+            CurrentLevel.name = levelKey;
+            InGameController.Instance.gameObject.SetActive(true);
+            InGameController.Instance.NewSession();
         });
     }
 
+    public void NextLevel()
+    {
+        int levelIndex = CampaignLevels.IndexOf(CurrentLevel.name);
+        levelIndex++;
+
+        if (levelIndex >= CampaignLevels.Count)
+        {
+            BackToMainMenu();
+            GameOverView.Instance.Show(InGameController.Instance.SessionScore, LeaderboardController.Instance.ShowLeaderboard);
+        }
+        else
+        {
+            LoadLevel(CampaignLevels[levelIndex]);
+        }
+    }
+
+
     public void BackToMainMenu()
     {
-        IngameUI.gameObject.SetActive(false);
+        InGameController.Instance.gameObject.SetActive(false);
 
         DisposeCurrentSession();
 
@@ -48,6 +74,7 @@ public class PangMinigame : MonoBehaviour
     void DisposeCurrentSession()
     {
         Destroy(CurrentLevel);
+        InGameController.Instance.DisposeSession();
     }
 
 

@@ -1,18 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class ScoreUIView : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField]
+    TextMeshProUGUI TextLabel;
 
-    // Update is called once per frame
-    void Update()
+    public void SetInfo(string text)
     {
-        
+        TextLabel.text = text;
     }
 }

@@ -16,7 +16,71 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: 8687f064ff445a34289b24517b8f9e02
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: d74c020e4ada0d6458fcc973050ff532
+    m_Address: Knife Hook Weapon
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 21ba4d6bc20bf5d44a2854bf9a4bd50f
+    m_Address: ActorInfoView
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8c63ad89258fa7d419540ead11be1762
+    m_Address: PlayerDeathEffect
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 470b265af4c133042ae2ca7c0a0b88d2
+    m_Address: Level 2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 28959b344841476419aa1969a015a3e2
+    m_Address: Level 3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d8df89600239a554c8f1bf3cc23e3d33
+    m_Address: AudioInstance
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8f1bd611cf6c79742944c5fbf2337b3e
+    m_Address: title
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d3d82883f67be8d47a4d7922ff4d3bd5
+    m_Address: hurt
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8d497a178e7b5bd4b84202e299706278
+    m_Address: score
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9a47b05742880b640a70f0a252639ddd
+    m_Address: death
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d4c07c2f765750340b9e63b13ad629a7
+    m_Address: impact
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 348ed11b094e3c9418a67964f7ce083b
+    m_Address: winjingle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e425283c38843c14195aed86c3311413
+    m_Address: bop
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: fbcecec2b53ba154eb195c531d18354a
+    m_Address: woosh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3d6277aeba65eab4bbe1432e64df2be7
+    m_Address: item
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9deb9e6121454374bb4be5b2e9c11937
+    m_Address: RoseProjectile
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 30174e614ab31574dbb0af2dc6fbc7e1, type: 2}
   m_SchemaSet:
