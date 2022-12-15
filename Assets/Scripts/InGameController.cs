@@ -25,6 +25,26 @@ public class InGameController : MonoBehaviour
 
     public int SessionScore;
 
+#if UNITY_ANDROID
+    [SerializeField]
+    GameObject MobileInput;
+
+    [SerializeField]
+    MobileButton MobileUpButton;
+
+    [SerializeField]
+    MobileButton MobileLeftButton;
+
+    [SerializeField]
+    MobileButton MobileRightButton;
+
+    [SerializeField]
+    MobileButton MobileHookButton;
+
+    
+#endif
+
+
     Coroutine DelayedLevelCompleteInstance;
 
     public void LeaveSession()
@@ -33,12 +53,21 @@ public class InGameController : MonoBehaviour
 
         GameOverView.Instance.Show(InGameController.Instance.SessionScore, () => LeaderboardController.Instance.ShowLeaderboard());
 
+#if UNITY_ANDROID
+        MobileInput.SetActive(false);
+#endif
+
+
         PangMinigame.Instance.BackToMainMenu();
     }
 
     public void NewSession()
     {
         SessionScore = 0;
+
+#if UNITY_ANDROID
+        MobileInput.SetActive(true);
+#endif
     }
 
     public void DisposeSession()
@@ -110,6 +139,28 @@ public class InGameController : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape)) LeaveSession();
+
+        #if UNITY_ANDROID
+        if (MobileLeftButton.IsPressed)
+        {
+             LevelActors.ForEach(x=>x.MoveLeft());
+        }
+        else if (MobileRightButton.IsPressed)
+        {
+             LevelActors.ForEach(x=>x.MoveRight());
+        }
+
+        if (MobileUpButton.IsPressed)
+        {
+             LevelActors.ForEach(x=>x.Jump());
+        }
+
+        if (MobileHookButton.IsPressed)
+        {
+             LevelActors.ForEach(x=>x.Hook());
+        }
+        #endif
     }
+
 
 }
